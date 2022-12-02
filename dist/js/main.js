@@ -4,12 +4,11 @@ const initApp = () => {
     const buttons = document.querySelectorAll('.btn');
     let count = 0;
     buttons.forEach((button) => {
-        button.addEventListener('click', (e) => {
-            const target = e.currentTarget;
-            if (target.classList.contains('decrease')) {
+        button.addEventListener('click', () => {
+            if (button.classList.contains('decrease')) {
                 count--;
             }
-            else if (target.classList.contains('increase')) {
+            else if (button.classList.contains('increase')) {
                 count++;
             }
             else {

@@ -7,12 +7,10 @@ const initApp = () => {
   let count = 0;
 
   buttons.forEach((button) => {
-    button.addEventListener('click', (e: MouseEvent) => {
-      const target = e.currentTarget as HTMLButtonElement;
-
-      if (target.classList.contains('decrease')) {
+    button.addEventListener('click', () => {
+      if (button.classList.contains('decrease')) {
         count--;
-      } else if (target.classList.contains('increase')) {
+      } else if (button.classList.contains('increase')) {
         count++;
       } else {
         count = 0;
