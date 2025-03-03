@@ -12,25 +12,30 @@
     <main>
       <div class="card">
         <div class="card-header">
-          <div class="card-title">Counter App</div>
+          <h1 class="card-title">Counter App</h1>
         </div>
 
         <div class="card-content">
           <div class="counter-container">
             <div class="count-display">
-              <div id="count" class="count">0</div>
+              <div id="count" class="count" aria-live="polite">0</div>
               <p class="count-label">Current Count</p>
             </div>
 
             <div id="buttons-container" class="buttons">
-              <button class="btn btn-outline" data-action="decrease">
+              <button
+                class="btn btn-outline"
+                data-action="decrease"
+                aria-label="Decrease"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="size-6"
+                  class="icon"
                 >
                   <path
                     stroke-linecap="round"
@@ -41,14 +46,19 @@
                 <span>Decrease</span>
               </button>
 
-              <button class="btn btn-outline" data-action="reset">
+              <button
+                class="btn btn-outline"
+                data-action="reset"
+                aria-label="Reset"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="size-6"
+                  class="icon"
                 >
                   <path
                     stroke-linecap="round"
@@ -59,14 +69,19 @@
                 <span>Reset</span>
               </button>
 
-              <button class="btn btn-outline" data-action="increase">
+              <button
+                class="btn btn-primary"
+                data-action="increase"
+                aria-label="Increase"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="size-6"
+                  class="icon"
                 >
                   <path
                     stroke-linecap="round"
