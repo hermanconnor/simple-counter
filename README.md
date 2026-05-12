@@ -19,7 +19,7 @@ A simple counter application built using HTML, CSS, and JavaScript. The app allo
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/simple-counter-app.git
+git clone https://github.com/hermanconnor/simple-counter-app.git
 ```
 
 ### 2. Navigate to the project directory
